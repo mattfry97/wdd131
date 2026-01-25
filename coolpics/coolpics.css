@@ -52,14 +52,14 @@ footer {
   margin-top: 1rem;
 }
 
-/* Tablet layout */
+/* Tablet */
 @media (min-width: 700px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop layout */
+/* Desktop */
 @media (min-width: 1000px) {
   .nav {
     display: flex;
