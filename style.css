@@ -1,0 +1,52 @@
+body {
+  font-family: Georgia, serif;
+  background-color: white;
+}
+
+.mission-box {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 40px;
+  border: 1px solid #ccc;
+}
+
+.mission-title {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.mission-subtitle {
+  text-align: center;
+  color: #006EB6;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.italic {
+  font-style: italic;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+.byui-logo {
+  display: block;
+  margin: 40px auto 0;
+  width: 120px;
+}
+
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
