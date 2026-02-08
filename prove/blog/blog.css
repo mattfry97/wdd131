@@ -23,7 +23,7 @@ body {
 
 .nav-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 1.5rem;
   list-style: none;
   margin-top: 0.5rem;
@@ -55,7 +55,7 @@ body {
 
 /* Meta info */
 .book-meta {
-  text-align: left;
+  text-align: right;
   font-size: 0.9rem;
 }
 
