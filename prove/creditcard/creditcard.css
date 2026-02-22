@@ -41,9 +41,11 @@ form {
 
 /* Back card */
 .back {
-    top: 40px;
-    left: 40px;
+    top: 50px;   
+    left: 50px;
     z-index: 1;
+    padding: 30px;
+    width: 380px;
 }
 
 .stripe {
@@ -53,7 +55,13 @@ form {
 }
 
 .cvc {
-    text-align: right;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.cvc input {
+    width: 80px;
 }
 
 /* Grid placements */
