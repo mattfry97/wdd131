@@ -1,72 +1,53 @@
+/* Base Page Styling */
 body {
-    background-color: #dcdcdc;
-    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 form {
     text-align: center;
 }
 
-/* Card container */
+/* Card Container */
 .card-container {
     position: relative;
-    width: 400px;
-    height: 250px;
-    margin-bottom: 20px;
+    width: 420px;
+    height: 260px;
+    margin: 0 auto 30px auto;
 }
 
-/* Base card styling */
+/* Shared Card Styling */
 .card {
     position: absolute;
-    width: 100%;
-    height: 200px;
-    background-color: #cfcfcf;
-    border-radius: 12px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
-    padding: 20px;
+    width: 400px;
+    height: 220px;
+    background-color: #d3d3d3;
+    border-radius: 16px;
+    box-shadow: 4px 6px 12px rgba(0,0,0,0.25);
+    padding: 25px;
     box-sizing: border-box;
 }
 
-/* Front card */
+/* ========================= */
+/* FRONT CARD */
+/* ========================= */
+
 .front {
     z-index: 2;
+
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
+    grid-template-rows: auto auto auto auto;
+    gap: 18px;
 }
 
-/* Back card */
-.back {
-    top: 50px;   
-    left: 50px;
-    z-index: 1;
-    padding: 30px;
-    width: 380px;
-}
-
-.stripe {
-    background-color: black;
-    height: 40px;
-    margin-bottom: 40px;
-}
-
-.cvc {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.cvc input {
-    width: 80px;
-}
-
-/* Grid placements */
+/* Top Row */
 .total {
     grid-column: 1 / 2;
+    font-weight: bold;
 }
 
 .card-logo {
@@ -74,35 +55,101 @@ form {
     text-align: right;
 }
 
+/* Card Number Full Width */
 .card-number {
     grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Card Holder */
 .card-holder {
     grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Expiration */
 #cardExpiration {
     grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Expiration Inputs Side by Side */
 #cardExpiration input {
-    width: 45%;
+    width: 60px;
+    margin-right: 10px;
 }
 
+#cardExpiration input:last-child {
+    margin-right: 0;
+}
+
+/* ========================= */
+/* BACK CARD */
+/* ========================= */
+
+.back {
+    z-index: 1;
+    transform: translate(45px, 45px);
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+}
+
+/* Magnetic Stripe */
+.stripe {
+    grid-column: 1 / 3;
+    background-color: black;
+    height: 45px;
+    border-radius: 6px;
+}
+
+/* CVC Section */
+.cvc {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cvc input {
+    width: 80px;
+}
+
+/* ========================= */
 /* Inputs */
+/* ========================= */
+
 input {
-    width: 100%;
-    padding: 6px;
-    margin-top: 5px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    margin-top: 6px;
     box-sizing: border-box;
 }
 
-/* Button */
+label {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* ========================= */
+/* Submit Button */
+/* ========================= */
+
 button {
-    padding: 8px 15px;
-    border-radius: 6px;
+    padding: 10px 20px;
+    border-radius: 8px;
     border: 1px solid #333;
-    background-color: #eee;
+    background-color: #f2f2f2;
     cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #e0e0e0;
 }
