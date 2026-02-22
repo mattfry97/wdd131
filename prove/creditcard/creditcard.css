@@ -22,7 +22,7 @@ form {
 /* Shared Card Styling */
 .card {
     position: absolute;
-    width: 400px;
+    width: 420px;
     height: 220px;
     background-color: #d3d3d3;
     border-radius: 16px;
@@ -30,6 +30,7 @@ form {
     padding: 25px;
     box-sizing: border-box;
 }
+
 
 /* ========================= */
 /* FRONT CARD */
@@ -97,9 +98,7 @@ form {
 
 .back {
     z-index: 1;
-    transform: translate(45px, 45px);
-    padding: 30px;
-
+    transform: translate(35px, 45px);  /* reduce overlap slightly */
     display: grid;
     grid-template-columns: 1fr 120px;
     grid-template-rows: auto auto;
