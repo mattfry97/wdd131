@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Recipe Tracker Site Plan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+  <title>Game Finder Site Plan</title>
   <link rel="stylesheet" href="site-plan.css">
 </head>
 
 <body>
 
 <header>
-  <h1>Recipe Tracker Site Plan</h1>
+  <h1>Game Finder Site Plan</h1>
   <h2>Matthew Fry</h2>
 </header>
 
@@ -20,106 +18,111 @@
   <section>
     <h2>Purpose</h2>
     <p>
-      This website allows users to store and organize their favorite recipes in one place. 
-      Users can add new recipes, view saved recipes, and filter them based on categories such as meal type or ingredients. 
-      The goal is to make it easy for users to manage and access their recipes quickly.
+      The purpose of this website is to help users discover video games based on their preferences. 
+      Users can browse a collection of games, filter them by genre and platform, and sort them by rating. 
+      The goal is to provide a simple and interactive way to explore new games.
     </p>
   </section>
 
   <section>
     <h2>Audience</h2>
     <p>
-      The intended audience is students and individuals who want a simple way to keep track of recipes. 
-      It is especially useful for people who cook regularly and want an organized way to save and find meals without using complex apps.
+      The intended audience is students and casual gamers who want a quick and easy way to find video games to play. 
+      This site is designed for users who do not want to search through complex apps and prefer a simple, clean interface.
     </p>
   </section>
 
   <section>
     <h2>Dynamic Elements</h2>
     <p>
-      This site will use JavaScript to allow users to add recipes through a form. Each recipe will be stored as an object inside an array. 
-      The recipes will be displayed dynamically on the page using DOM manipulation.
+      JavaScript is used to dynamically display and update the list of games. The site stores game data in an array of objects. 
+      Each game contains properties such as name, genre, platform, rating, and description.
     </p>
+
     <p>
-      Users will be able to filter recipes by category such as breakfast, lunch, or dinner using buttons. 
-      Conditional logic will determine which recipes are displayed based on the selected filter.
+      The displayGames function renders the game list onto the page using DOM manipulation. 
+      Users can interact with the site through buttons that filter games by genre and platform using array filter methods.
     </p>
+
     <p>
-      Event listeners will be used to handle user interactions such as submitting the form and clicking filter buttons.
+      A sorting feature allows users to sort games by rating using an array sort method. 
+      Event listeners are used to respond to user clicks and update the displayed content. 
+      Conditional logic determines which games are shown based on the selected filters.
+    </p>
+
+    <p>
+      A "View Details" button allows users to view additional information about each game, demonstrating further DOM interaction and event handling.
     </p>
   </section>
 
   <section>
     <h2>Logo</h2>
-    <p>Logo will be a simple "Recipe Tracker" design created using Canva or a similar tool.</p>
-    <img src="images/logo.png" alt="Recipe Tracker Logo" width="200">
+    <p>
+      The logo will be a simple gaming themed icon such as a controller symbol combined with the text "Game Finder". 
+      The design will be minimal so that it scales well and can be used as a favicon.
+    </p>
   </section>
 
   <section>
     <h2>Color Scheme</h2>
     <ul>
-      <li>Primary Color: #2c3e50</li>
-      <li>Secondary Color: #ecf0f1</li>
-      <li>Accent Color: #e67e22</li>
+      <li>Primary Color: #2c3e50 (dark blue header)</li>
+      <li>Secondary Color: #3498db (buttons and accents)</li>
+      <li>Accent Color: #e67e22 (highlight buttons)</li>
+      <li>Background Color: #f4f4f4 (light gray background)</li>
     </ul>
   </section>
 
   <section>
     <h2>Typography</h2>
     <ul>
-      <li>Headings: Poppins</li>
-      <li>Body Text: Open Sans</li>
+      <li>Headings: Arial, sans-serif</li>
+      <li>Body Text: Arial, sans-serif</li>
     </ul>
   </section>
 
   <section>
     <h2>Content</h2>
+
     <h3>Home Page</h3>
-    <p><strong>Welcome to Recipe Tracker</strong></p>
     <p>
-      Keep all your favorite recipes in one place. Add new recipes, organize them, and quickly find what you want to cook.
+      Welcome to Game Finder. This site helps users discover video games based on genre, platform, and rating. 
+      Users can navigate to the browse page to explore available games.
     </p>
 
-    <h3>Instructions</h3>
+    <h3>Browse Games Page</h3>
     <p>
-      Use the form to add a recipe. Select a category and include ingredients. 
-      Your recipes will appear below and can be filtered.
+      This page displays a collection of games. Users can filter by genre and platform, sort by rating, 
+      and click "View Details" to learn more about each game.
     </p>
-  </section>
 
-  <section>
-    <h2>Example Data</h2>
-    <pre>
-const recipes = [
-  {
-    name: "Spaghetti",
-    category: "Dinner",
-    ingredients: ["pasta", "tomato sauce"],
-    favorite: true
-  },
-  {
-    name: "Pancakes",
-    category: "Breakfast",
-    ingredients: ["flour", "milk", "eggs"],
-    favorite: false
-  }
-];
-    </pre>
   </section>
 
   <section>
     <h2>Wireframes</h2>
-    <h3>Home Page</h3>
-    <img src="images/home-wireframe.png" alt="Home page wireframe">
 
-    <h3>Child Page</h3>
-    <img src="images/child-wireframe.png" alt="Child page wireframe">
+    <h3>Mobile View</h3>
+    <ul>
+      <li>Header with title and navigation</li>
+      <li>Filter buttons stacked vertically</li>
+      <li>Sort button</li>
+      <li>Game cards in a single column</li>
+    </ul>
+
+    <h3>Desktop View</h3>
+    <ul>
+      <li>Header at top with navigation</li>
+      <li>Filters displayed horizontally</li>
+      <li>Sort button centered</li>
+      <li>Game cards displayed in a multi-column grid layout</li>
+    </ul>
+
   </section>
 
 </main>
 
 <footer>
-  <p>Recipe Tracker Site Plan</p>
+  <p>Game Finder Site Plan</p>
 </footer>
 
 </body>
