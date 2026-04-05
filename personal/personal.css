@@ -57,7 +57,7 @@ main {
 
 .btn {
   display: inline-block;
-  background-color: #e67e22;
+  background-color: #c65d0e;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -65,7 +65,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #cf711f;
+  background-color: #a94e0c;
 }
 
 .info {
