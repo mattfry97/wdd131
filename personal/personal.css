@@ -102,7 +102,7 @@ main {
   display: block;
   margin: 10px auto;
   padding: 8px 12px;
-  background-color: #e67e22;
+  background-color: #8b3e00;
   color: white;
   border: none;
   cursor: pointer;
@@ -110,7 +110,8 @@ main {
 }
 
 #sortBtn:hover {
-  background-color: #cf711f;
+  background-color: #6e3000;
+
 }
 
 #gameList {
