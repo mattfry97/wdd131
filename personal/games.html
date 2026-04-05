@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Games</title>
+  <link rel="stylesheet" href="personal.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Game Finder</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Browse Games</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h2>Browse Games</h2>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filters">
+      <button data-genre="all">All</button>
+      <button data-genre="action">Action</button>
+      <button data-genre="rpg">RPG</button>
+      <button data-genre="sports">Sports</button>
+    </div>
+    <div class="filters">
+        <button data-platform="all">All Platforms</button>
+        <button data-platform="PC">PC</button>
+        <button data-platform="Xbox">Xbox</button>
+        <button data-platform="PlayStation">PlayStation</button>
+        <button data-platform="Switch">Switch</button>
+    </div>
+
+    <!-- SORT BUTTON -->
+    <button id="sortBtn">Sort by Rating</button>
+
+    <!-- GAME LIST -->
+    <div id="gameList"></div>
+
+  </main>
+
+  <footer>
+    <p>Matthew Fry | WDD131</p>
+  </footer>
+
+  <script src="personal.js"></script>
+</body>
+</html>
