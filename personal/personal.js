@@ -39,7 +39,7 @@ function displayGames(gameArray) {
 
     div.innerHTML = `
       <h3>${game.name}</h3>
-      <p>Genre: ${game.genre}</p>
+      <p>Genre: ${game.genre.toUpperCase()}</p>
       <p>Platform: ${game.platform}</p>
       <p>Rating: ${game.rating}</p>
       <button class="details-btn">View Details</button>
