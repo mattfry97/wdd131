@@ -166,3 +166,9 @@ footer {
 .details-btn:hover {
   background-color: #1e8449;
 }
+
+.logo {
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
